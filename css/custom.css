@@ -1,0 +1,96 @@
+body {
+  background: #5e5e5ebd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4f7ab6, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4c7ba7, #7c7c7c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#result {  
+  .error_message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(139, 0, 0);
+    font-weight: bold;
+    width: 100%;
+
+    strong {
+      font-size: 28px;
+    }
+  }
+}
+
+.images_content {
+  width: 50%; 
+  padding: 0.75rem; 
+  margin-bottom: 1rem;
+
+  .bg_img_content {
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .text_img_content {
+      padding: 16px;
+
+      p {
+        font-weight: bold;
+      }
+
+      span {
+        font-weight: 500;
+      }
+
+      .show_image_btn {
+        width: 100%;
+        background-color: #3B82F6; 
+        color: white; 
+        text-transform: uppercase; 
+        font-weight: bold; 
+        text-align: center; 
+        display: flex;
+        justify-content: center;
+        border-radius: 0.25rem;
+        margin-top: 1.25rem; 
+        padding: 0.25rem; 
+        transition: background-color 0.3s ease;
+      }
+
+      .show_image_btn {
+        background-color: #3B82F6;
+      }
+    }
+  }
+}
+
+#paginate {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .paginate {
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 768px) { 
+  .images_content {
+    width: 33.3333%; 
+  }
+}
+
+@media (min-width: 1024px) { 
+  .images_content {
+    width: 25%;
+  }
+}
