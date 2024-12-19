@@ -24,19 +24,21 @@ function validForm(e) {
     searchImages();
 }
 
-function searchImages() {
+async function searchImages() {
 
     const term = document.querySelector('#term').value;
 
     const key = '47650806-c0b80705062457dbd8c97b9fd';
     const url = `https://pixabay.com/api/?key=${key}&q=${term}&per_page=${registerPerPage}&page=${actualPage}`;
+        
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        totalPages = calculatePages(data.totalHits);
+        showImages(data.hits)
+    } catch {
 
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            totalPages = calculatePages(data.totalHits);
-            showImages(data.hits)
-        })
+    }
 }
 
 function *createPaginate(total) {
