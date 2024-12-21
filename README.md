@@ -48,10 +48,6 @@ The project uses the Pixabay API. To use your own API key:
 2. Get your API key
 3. Replace the key constant in the app.js file with your key
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
 ## Author
 
 Jesus Virgen
