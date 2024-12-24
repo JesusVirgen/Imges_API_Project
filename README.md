@@ -25,11 +25,15 @@ An interactive image search engine that uses the Pixabay API to display search r
 
 1. Clone this repository:
 
-bash:
+```bash
 git clone https://github.com/JesusVirgen/Imges_API_Project.git
+```
 
 2. Navigate to the project directory:
-   cd image-finder
+
+```bash
+cd image-finder
+```
 
 3. Open the index.html file in your web browser
 
