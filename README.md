@@ -1,5 +1,7 @@
 # Image Finder
 
+![Pixabay_images_project Screenshot](img/screenshot.png)
+
 ## Description
 
 An interactive image search engine that uses the Pixabay API to display search results with pagination. Users can search for images by specific terms and view details such as likes and views for each image.
